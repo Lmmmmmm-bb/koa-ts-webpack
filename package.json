@@ -8,7 +8,8 @@
     "build": "webpack",
     "format": "npx prettier --write .",
     "check": "npx prettier --check .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "cz"
   },
   "keywords": [],
   "author": "",
@@ -19,11 +20,16 @@
     "koa2-cors": "^2.0.6"
   },
   "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "@types/koa": "^2.13.4",
     "@types/koa-bodyparser": "^4.3.4",
     "@types/koa-router": "^7.4.4",
     "@types/koa2-cors": "^2.0.2",
     "clean-webpack-plugin": "^4.0.0",
+    "commitlint-config-cz": "^0.13.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
     "husky": "^7.0.4",
     "koa-bodyparser": "^4.3.0",
     "lint-staged": "^12.1.2",
@@ -37,5 +43,15 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   }
 }
