@@ -27,6 +27,8 @@
     "@types/koa-bodyparser": "^4.3.4",
     "@types/koa-router": "^7.4.4",
     "@types/koa2-cors": "^2.0.2",
+    "@types/node": "^16.11.12",
+    "@types/webpack": "^5.28.0",
     "clean-webpack-plugin": "^4.0.0",
     "commitlint-config-cz": "^0.13.2",
     "cz-conventional-changelog": "^3.3.0",
