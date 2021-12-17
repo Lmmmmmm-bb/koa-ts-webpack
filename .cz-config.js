@@ -12,23 +12,22 @@ module.exports = {
   ],
   typePrefix: '[',
   typeSuffix: ']',
-  scopes: [{ name: '配置文件' }],
-  // it needs to match the value for field type. Eg.: 'fix'
-  /*
-  scopeOverrides: {
-    fix: [
-      {name: 'merge'},
-      {name: 'style'},
-      {name: 'e2eTest'},
-      {name: 'unitTest'}
-    ]
-  },
-  */
-  // override the messages, defaults are as follows
+  scopes: [
+    ['route', '路由相关'],
+    ['hooks', 'hook 相关'],
+    ['utils', 'utils 相关'],
+    ['deps', '项目依赖'],
+    ['other', '其他修改'],
+    ['custom', '以上都不是？我要自定义']
+  ].map(([value, description]) => {
+    return {
+      value,
+      name: `${value.padEnd(30)} (${description})`
+    };
+  }),
   messages: {
     type: '为确保提交遵循规范!\n选择你要提交的类型: ',
     scope: '选择一个 scope (可选): ',
-    // used if allowCustomScopes is true
     customScope: '请输入自定义的 scope: ',
     subject: '填写简短的变更描述: \n',
     body: '填写更加详细的变更描述（可选）。使用 "|" 换行: \n',
