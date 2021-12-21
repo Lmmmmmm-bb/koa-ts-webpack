@@ -6,8 +6,8 @@
   "scripts": {
     "watch": "nodemon --watch ./src -e ts,tsx --exec ts-node ./src/index.ts",
     "build": "webpack",
-    "format": "npx prettier --write .",
-    "check": "npx prettier --check .",
+    "format": "prettier --write \"./src/**/*.ts\"",
+    "check": "prettier --check \"./src/**/*.ts\"",
     "prepare": "husky install",
     "commit": "./node_modules/cz-customizable/standalone.js"
   },
