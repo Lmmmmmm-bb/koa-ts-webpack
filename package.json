@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "nodemon --watch src/**/* -e ts,tsx --exec ts-node ./src/index.ts",
+    "watch": "nodemon --watch ./src -e ts,tsx --exec ts-node ./src/index.ts",
     "build": "webpack",
     "format": "npx prettier --write .",
     "check": "npx prettier --check .",
