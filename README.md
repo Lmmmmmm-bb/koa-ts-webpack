@@ -8,6 +8,28 @@
     <a href="javascript:;"><img alt="GitHub PR" src="https://img.shields.io/badge/PR-Welcome-%2345A2FF" /></a>
 </p>
 
+## 目录结构
+
+```
+├── .cz-config.js           // 配置 commit 信息引导提示
+├── .editorconfig
+├── .gitignore
+├── .husky                  // hooks 相关文件
+├── .prettierignore
+├── .prettierrc             // 配置代码格式化风格
+├── LICENSE
+├── README.md
+├── commitlint.config.ts    // commit-lint 配置文件
+├── package-lock.json
+├── package.json
+├── src
+│   ├── index.ts            // koa 入口文件
+│   ├── models              // 存放模型的文件夹
+│   └── routes              // 存放 koa 路由的文件夹
+├── tsconfig.json
+└── webpack.config.ts       // webpack 配置文件
+```
+
 ## 主要模块
 
 - Koa
