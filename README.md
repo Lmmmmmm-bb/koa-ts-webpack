@@ -20,7 +20,7 @@
 ├── LICENSE
 ├── README.md
 ├── commitlint.config.ts    // commit-lint 配置文件
-├── package-lock.json
+├── pnpm-lock.yaml
 ├── package.json
 ├── src
 │   ├── index.ts            // koa 入口文件
