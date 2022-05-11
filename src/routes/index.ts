@@ -1,5 +1,3 @@
-import { CommonImp } from './common';
+import { commonRouter } from './common';
 
-const Routes = [...CommonImp];
-
-export default Routes;
+export const routes = [...commonRouter];

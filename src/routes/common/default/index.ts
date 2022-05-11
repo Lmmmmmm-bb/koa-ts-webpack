@@ -2,7 +2,7 @@ import { Context } from 'koa';
 import KoaRouter from 'koa-router';
 import { IBaseResponse, HttpStatus } from '../../../models/response.model';
 
-const defaultRouter = new KoaRouter();
+export const defaultRouter = new KoaRouter();
 
 defaultRouter.get('(.*)', (ctx: Context) => {
   const responseBody: IBaseResponse = { status: 0, msg: '' };
@@ -12,5 +12,3 @@ defaultRouter.get('(.*)', (ctx: Context) => {
   ctx.response.status = responseBody.status;
   ctx.response.body = responseBody;
 });
-
-export default defaultRouter;

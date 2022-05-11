@@ -1,3 +1,3 @@
-import DefaultRouter from './default';
+import { defaultRouter } from './default';
 
-export const CommonImp = [DefaultRouter];
+export const commonRouter = [defaultRouter];
