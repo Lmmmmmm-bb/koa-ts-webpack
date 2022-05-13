@@ -1,6 +1,6 @@
 import { Context } from 'koa';
 import KoaRouter from 'koa-router';
-import { IBaseResponse, HttpStatus } from '../../../models/response.model';
+import { IBaseResponse, HttpStatus } from '../../../models/response';
 
 export const defaultRouter = new KoaRouter();
 
