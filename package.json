@@ -12,8 +12,11 @@
     "prepare": "husky install"
   },
   "keywords": ["koa", "typescript", "webpack", "template", "starter"],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "_lmmmmmm",
+    "email": "lmmmmmm12138@gmail.com"
+  },
+  "license": "MIT",
   "dependencies": {
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",

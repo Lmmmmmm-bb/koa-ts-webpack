@@ -53,10 +53,3 @@
 
 - husky
 - commitlint
-- cz-customizable
-
-通过 `.cz-config.js` 文件来配置 `git commit` 信息提交。
-
-`.cz-config.js` 的实例文件可查看 [官方示例](https://github.com/leoforfree/cz-customizable/blob/master/cz-config-EXAMPLE.js)。
-
-使用 `npm run commit` 代替 `git commit` 进行提交。
